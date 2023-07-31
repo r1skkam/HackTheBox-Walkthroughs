@@ -11,8 +11,12 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Devel/Devel.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Devel/Devel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Devel/Devel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Devel/Devel.md"
+              }
             }
           }
         ]
@@ -139,5 +147,21 @@
     }
   },
   "active": "8a4be9126747d020",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Devel/Devel.pdf",
+    "Devel/Pasted/Pasted image 20230731193006.png",
+    "Devel/Devel Official Writeup.pdf",
+    "Devel/Devel.md",
+    "Devel/Pasted/Pasted image 20230731191702.png",
+    "Devel/Pasted/Pasted image 20230731192803.png",
+    "Devel/Pasted/Pasted image 20230731192421.png",
+    "Devel/Pasted/Pasted image 20230731192143.png",
+    "Devel/Pasted/Pasted image 20230731183816.png",
+    "Devel/Pasted/Pasted image 20230731191512.png",
+    "Devel/Pasted/Pasted image 20230731191113.png",
+    "Devel/Pasted/Pasted image 20230731190028.png",
+    "Devel/Pasted/Pasted image 20230731185816.png",
+    "Devel/Pasted",
+    "Devel"
+  ]
 }
