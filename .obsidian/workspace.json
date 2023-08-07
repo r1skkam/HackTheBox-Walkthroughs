@@ -11,11 +11,9 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Devel/Devel.md",
-                "mode": "source",
-                "source": false
+                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Devel/Devel.md",
+                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Devel/Devel.md",
+                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Devel/Devel.md"
+                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png"
               }
             }
           }
@@ -146,21 +144,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a4be9126747d020",
+  "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Pro Labs - Dante/Pro Labs - Dante.md",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807184449.png",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807183819.png",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807183637.png",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807183549.png",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
+    "Pro Labs - Dante/Pasted",
+    "Devel/Devel.md",
+    "Pro Labs - Dante",
     "Devel/Devel.pdf",
     "Devel/Pasted/Pasted image 20230731193006.png",
     "Devel/Devel Official Writeup.pdf",
-    "Devel/Devel.md",
     "Devel/Pasted/Pasted image 20230731191702.png",
     "Devel/Pasted/Pasted image 20230731192803.png",
     "Devel/Pasted/Pasted image 20230731192421.png",
     "Devel/Pasted/Pasted image 20230731192143.png",
-    "Devel/Pasted/Pasted image 20230731183816.png",
-    "Devel/Pasted/Pasted image 20230731191512.png",
-    "Devel/Pasted/Pasted image 20230731191113.png",
-    "Devel/Pasted/Pasted image 20230731190028.png",
-    "Devel/Pasted/Pasted image 20230731185816.png",
     "Devel/Pasted",
     "Devel"
   ]
