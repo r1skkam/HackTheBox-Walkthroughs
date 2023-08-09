@@ -11,9 +11,11 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png"
+                "file": "Legacy/Legacy.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
+                "file": "Legacy/Legacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
+                "file": "Legacy/Legacy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png"
+                "file": "Legacy/Legacy.md"
               }
             }
           }
@@ -146,23 +148,29 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
+    "Legacy/Legacy - Official HTB Walkthrough.pdf",
+    "Completed",
     "Pro Labs - Dante/Pro Labs - Dante.md",
+    "Legacy/Legacy.md",
+    "Legacy/Pasted",
+    "Legacy",
+    "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
     "Pro Labs - Dante/Pasted/Pasted image 20230807184449.png",
     "Pro Labs - Dante/Pasted/Pasted image 20230807183819.png",
     "Pro Labs - Dante/Pasted/Pasted image 20230807183637.png",
     "Pro Labs - Dante/Pasted/Pasted image 20230807183549.png",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
     "Pro Labs - Dante/Pasted",
-    "Devel/Devel.md",
+    "Completed/Devel/Devel.md",
     "Pro Labs - Dante",
-    "Devel/Devel.pdf",
-    "Devel/Pasted/Pasted image 20230731193006.png",
-    "Devel/Devel Official Writeup.pdf",
-    "Devel/Pasted/Pasted image 20230731191702.png",
-    "Devel/Pasted/Pasted image 20230731192803.png",
-    "Devel/Pasted/Pasted image 20230731192421.png",
-    "Devel/Pasted/Pasted image 20230731192143.png",
-    "Devel/Pasted",
-    "Devel"
+    "Completed/Devel/Devel.pdf",
+    "Completed/Devel/Pasted/Pasted image 20230731193006.png",
+    "Completed/Devel/Devel Official Writeup.pdf",
+    "Completed/Devel/Pasted/Pasted image 20230731191702.png",
+    "Completed/Devel/Pasted/Pasted image 20230731192803.png",
+    "Completed/Devel/Pasted/Pasted image 20230731192421.png",
+    "Completed/Devel/Pasted/Pasted image 20230731192143.png",
+    "Completed/Devel/Pasted",
+    "Completed/Devel"
   ]
 }
