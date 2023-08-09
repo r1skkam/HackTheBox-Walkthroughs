@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Legacy/Legacy.md",
+                "file": "Completed/Legacy/Legacy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legacy/Legacy.md",
+                "file": "Completed/Legacy/Legacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Legacy/Legacy.md",
+                "file": "Completed/Legacy/Legacy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Legacy/Legacy.md"
+                "file": "Completed/Legacy/Legacy.md"
               }
             }
           }
@@ -148,29 +148,29 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Completed/Legacy/Legacy.pdf",
+    "Completed/Legacy/Pasted/Pasted image 20230809143237.png",
+    "Completed/Legacy/Legacy.md",
+    "Completed/Legacy/Pasted/Pasted image 20230809164641.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809155656.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809155455.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809155323.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809155149.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809144016.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809143635.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809143427.png",
+    "Completed/Legacy/Legacy - Official HTB Walkthrough.pdf",
     "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
-    "Legacy/Legacy - Official HTB Walkthrough.pdf",
     "Completed",
     "Pro Labs - Dante/Pro Labs - Dante.md",
-    "Legacy/Legacy.md",
-    "Legacy/Pasted",
-    "Legacy",
+    "Completed/Legacy/Pasted",
+    "Completed/Legacy",
     "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807184449.png",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807183819.png",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807183637.png",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807183549.png",
     "Pro Labs - Dante/Pasted",
     "Completed/Devel/Devel.md",
     "Pro Labs - Dante",
     "Completed/Devel/Devel.pdf",
-    "Completed/Devel/Pasted/Pasted image 20230731193006.png",
     "Completed/Devel/Devel Official Writeup.pdf",
-    "Completed/Devel/Pasted/Pasted image 20230731191702.png",
-    "Completed/Devel/Pasted/Pasted image 20230731192803.png",
-    "Completed/Devel/Pasted/Pasted image 20230731192421.png",
-    "Completed/Devel/Pasted/Pasted image 20230731192143.png",
-    "Completed/Devel/Pasted",
-    "Completed/Devel"
+    "Completed/Devel/Pasted"
   ]
 }
