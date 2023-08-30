@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830055711.png"
+                "file": "Timelapse/Pasted/Pasted image 20230830141041.png"
               }
             }
           }
@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "37acec70ea435d2a",
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830055711.png",
+                "file": "Timelapse/Pasted/Pasted image 20230830141041.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830055711.png",
+                "file": "Timelapse/Pasted/Pasted image 20230830141041.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830055711.png"
+                "file": "Timelapse/Pasted/Pasted image 20230830141041.png"
               }
             }
           }
@@ -146,26 +146,26 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
-    "Timelapse/Pasted/Pasted image 20230830055545.png",
     "Timelapse/Timelapse.md",
-    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
+    "Pasted image 20230830140830.png",
+    "Timelapse/Pasted/Pasted image 20230830141041.png",
+    "Timelapse/Pasted/Pasted image 20230830140453.png",
+    "Timelapse/Pasted/Pasted image 20230830134452.png",
+    "Timelapse/Pasted/Pasted image 20230830140338.png",
+    "Timelapse/Pasted/Pasted image 20230830140001.png",
     "Timelapse/Timelapse Official HTB Walkthrough.pdf",
+    "Timelapse/Pasted/Pasted image 20230830135048.png",
+    "Timelapse/Pasted/Pasted image 20230830055711.png",
+    "Timelapse/Pasted/Pasted image 20230830055545.png",
+    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
     "Timelapse/Timelapse Official HTB Writeup.pdf",
     "Timelapse/Timelapse Official Writeup.pdf",
     "Timelapse/Timelapse Official Writeups.pdf",
-    "Timelapse/Pasted/Pasted image 20230830055711.png",
     "Completed/Legacy/Pasted/Pasted image 20230809143635.png",
     "Timelapse/Pasted",
     "Timelapse",
     "Completed/Legacy/Legacy.md",
     "Completed/Legacy/Legacy.pdf",
-    "Completed/Legacy/Pasted/Pasted image 20230809143237.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809164641.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809155656.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809155455.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809155323.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809155149.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809144016.png",
     "Completed/Legacy/Legacy - Official HTB Walkthrough.pdf",
     "Completed",
     "Pro Labs - Dante/Pro Labs - Dante.md",
