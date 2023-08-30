@@ -11,9 +11,11 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830141041.png"
+                "file": "Timelapse/Timelapse.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830141041.png",
+                "file": "Timelapse/Timelapse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830141041.png",
+                "file": "Timelapse/Timelapse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Timelapse/Pasted/Pasted image 20230830141041.png"
+                "file": "Timelapse/Timelapse.md"
               }
             }
           }
@@ -144,24 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca987193e7a4c061",
+  "active": "8a4be9126747d020",
   "lastOpenFiles": [
+    "Timelapse/Timelapse Official HTB Walkthrough.pdf",
     "Timelapse/Timelapse.md",
-    "Pasted image 20230830140830.png",
+    "Timelapse/Pasted/Pasted image 20230830184108.png",
+    "Timelapse/Pasted/Pasted image 20230830182400.png",
+    "Timelapse/Pasted/Pasted image 20230830181137.png",
     "Timelapse/Pasted/Pasted image 20230830141041.png",
+    "Pasted image 20230830140830.png",
     "Timelapse/Pasted/Pasted image 20230830140453.png",
     "Timelapse/Pasted/Pasted image 20230830134452.png",
     "Timelapse/Pasted/Pasted image 20230830140338.png",
     "Timelapse/Pasted/Pasted image 20230830140001.png",
-    "Timelapse/Timelapse Official HTB Walkthrough.pdf",
     "Timelapse/Pasted/Pasted image 20230830135048.png",
-    "Timelapse/Pasted/Pasted image 20230830055711.png",
-    "Timelapse/Pasted/Pasted image 20230830055545.png",
     "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
     "Timelapse/Timelapse Official HTB Writeup.pdf",
     "Timelapse/Timelapse Official Writeup.pdf",
     "Timelapse/Timelapse Official Writeups.pdf",
-    "Completed/Legacy/Pasted/Pasted image 20230809143635.png",
     "Timelapse/Pasted",
     "Timelapse",
     "Completed/Legacy/Legacy.md",

