@@ -11,11 +11,9 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Completed/Legacy/Legacy.md",
-                "mode": "source",
-                "source": false
+                "file": "Timelapse/Pasted/Pasted image 20230830055711.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Completed/Legacy/Legacy.md",
+                "file": "Timelapse/Pasted/Pasted image 20230830055711.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Completed/Legacy/Legacy.md",
+                "file": "Timelapse/Pasted/Pasted image 20230830055711.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Completed/Legacy/Legacy.md"
+                "file": "Timelapse/Pasted/Pasted image 20230830055711.png"
               }
             }
           }
@@ -148,29 +146,29 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Timelapse/Pasted/Pasted image 20230830055545.png",
+    "Timelapse/Timelapse.md",
+    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
+    "Timelapse/Timelapse Official HTB Walkthrough.pdf",
+    "Timelapse/Timelapse Official HTB Writeup.pdf",
+    "Timelapse/Timelapse Official Writeup.pdf",
+    "Timelapse/Timelapse Official Writeups.pdf",
+    "Timelapse/Pasted/Pasted image 20230830055711.png",
+    "Completed/Legacy/Pasted/Pasted image 20230809143635.png",
+    "Timelapse/Pasted",
+    "Timelapse",
+    "Completed/Legacy/Legacy.md",
     "Completed/Legacy/Legacy.pdf",
     "Completed/Legacy/Pasted/Pasted image 20230809143237.png",
-    "Completed/Legacy/Legacy.md",
     "Completed/Legacy/Pasted/Pasted image 20230809164641.png",
     "Completed/Legacy/Pasted/Pasted image 20230809155656.png",
     "Completed/Legacy/Pasted/Pasted image 20230809155455.png",
     "Completed/Legacy/Pasted/Pasted image 20230809155323.png",
     "Completed/Legacy/Pasted/Pasted image 20230809155149.png",
     "Completed/Legacy/Pasted/Pasted image 20230809144016.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809143635.png",
-    "Completed/Legacy/Pasted/Pasted image 20230809143427.png",
     "Completed/Legacy/Legacy - Official HTB Walkthrough.pdf",
-    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
     "Completed",
     "Pro Labs - Dante/Pro Labs - Dante.md",
-    "Completed/Legacy/Pasted",
-    "Completed/Legacy",
-    "Pro Labs - Dante/Pasted/Pasted image 20230807183324.png",
-    "Pro Labs - Dante/Pasted",
-    "Completed/Devel/Devel.md",
-    "Pro Labs - Dante",
-    "Completed/Devel/Devel.pdf",
-    "Completed/Devel/Devel Official Writeup.pdf",
-    "Completed/Devel/Pasted"
+    "Completed/Devel/Devel.md"
   ]
 }
