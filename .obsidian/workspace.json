@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Completed/Academy/Academy.md",
+                "file": "After failed OSCP/Legacy/Legacy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Completed/Academy/Academy.md",
+                "file": "After failed OSCP/Legacy/Legacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Completed/Academy/Academy.md",
+                "file": "After failed OSCP/Legacy/Legacy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Completed/Academy/Academy.md"
+                "file": "After failed OSCP/Legacy/Legacy.md"
               }
             }
           },
@@ -158,19 +158,26 @@
   },
   "active": "8a4be9126747d020",
   "lastOpenFiles": [
+    "After failed OSCP/Legacy/Pasted image 20231105161736.png",
+    "After failed OSCP/Legacy/Pasted image 20231105161223.png",
+    "After failed OSCP/Legacy/Pasted image 20231105160635.png",
+    "After failed OSCP/Legacy/Pasted image 20231105142128.png",
+    "After failed OSCP/Legacy/Pasted image 20231105123436.png",
+    "After failed OSCP/Legacy/Pasted image 20231105123139.png",
+    "After failed OSCP/Legacy/Pasted image 20231105122713.png",
+    "After failed OSCP/Legacy/Pasted image 20231105122437.png",
+    "After failed OSCP/Legacy/Pasted image 20231105122402.png",
+    "After failed OSCP/Legacy/Pasted image 20231105122329.png",
+    "Completed/Legacy/Legacy.md",
+    "After failed OSCP/Legacy/Legacy.md",
+    "After failed OSCP/Legacy",
+    "After failed OSCP",
+    "Sauna/Sauna.md",
+    "Sauna/Pasted image 20231027211149.png",
+    "Completed/Academy/Academy.md",
+    "Sauna",
     "Completed/Academy/Academy.pdf",
     "Completed/Academy/Academy Official HTB Walkthrough.pdf",
-    "Completed/Academy/Academy.md",
-    "Completed/Academy/Pasted image 20231014204938.png",
-    "Completed/Academy/Pasted image 20231014203314.png",
-    "Completed/Academy/Pasted image 20231014203220.png",
-    "Completed/Academy/Pasted image 20231014203124.png",
-    "Completed/Academy/Pasted image 20231014202947.png",
-    "Completed/Academy/Pasted image 20231014202905.png",
-    "Completed/Academy/Pasted image 20231014202749.png",
-    "Completed/Academy/Pasted image 20231014202636.png",
-    "Completed/Academy/Pasted image 20231014201700.png",
-    "Completed/Academy/Pasted image 20231014201519.png",
     "Mantis/Mantis.pdf",
     "Mantis/Mantis.md",
     "Mantis",
@@ -178,10 +185,6 @@
     "Completed/Academy",
     "Completed/Timelapse/Timelapse Official HTB Walkthrough.pdf",
     "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
-    "Timelapse/Timelapse Official HTB Writeup.pdf",
-    "Timelapse/Timelapse Official Writeup.pdf",
-    "Timelapse/Timelapse Official Writeups.pdf",
-    "Completed/Legacy/Legacy.md",
     "Pro Labs - Dante/Pro Labs - Dante.md",
     "Completed/Devel/Devel.md"
   ]
