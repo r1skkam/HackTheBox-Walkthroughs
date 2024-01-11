@@ -158,8 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a4be9126747d020",
+  "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Scrambled/Scrambled.md",
+    "Scrambled",
+    "After failed OSCP/Forest.pdf",
+    "After failed OSCP/Forest.md",
     "After failed OSCP/Legacy/Pasted image 20231106173003.png",
     "After failed OSCP/Legacy/Pasted image 20231106172402.png",
     "After failed OSCP/Legacy/Pasted image 20231106172327.png",
@@ -170,7 +174,6 @@
     "After failed OSCP/Legacy/Pasted image 20231105160635.png",
     "After failed OSCP/Legacy/Pasted image 20231105142128.png",
     "After failed OSCP/Legacy/Pasted image 20231105123436.png",
-    "After failed OSCP/Legacy/Pasted image 20231105123139.png",
     "Completed/Legacy/Legacy.md",
     "After failed OSCP/Legacy/Legacy.md",
     "After failed OSCP/Legacy",
@@ -185,8 +188,6 @@
     "Mantis",
     "Completed/Timelapse/Timelapse.md",
     "Completed/Academy",
-    "Completed/Timelapse/Timelapse Official HTB Walkthrough.pdf",
-    "Completed/Devel/Devel - Official HTB Walkthrough.pdf",
     "Pro Labs - Dante/Pro Labs - Dante.md",
     "Completed/Devel/Devel.md"
   ]
