@@ -135,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -158,22 +160,22 @@
   },
   "active": "8a4be9126747d020",
   "lastOpenFiles": [
+    "After failed OSCP/Legacy/Pasted image 20231106173003.png",
+    "After failed OSCP/Legacy/Pasted image 20231106172402.png",
+    "After failed OSCP/Legacy/Pasted image 20231106172327.png",
+    "After failed OSCP/Legacy/Pasted image 20231106171716.png",
+    "After failed OSCP/Legacy/Pasted image 20231106171631.png",
     "After failed OSCP/Legacy/Pasted image 20231105161736.png",
     "After failed OSCP/Legacy/Pasted image 20231105161223.png",
     "After failed OSCP/Legacy/Pasted image 20231105160635.png",
     "After failed OSCP/Legacy/Pasted image 20231105142128.png",
     "After failed OSCP/Legacy/Pasted image 20231105123436.png",
     "After failed OSCP/Legacy/Pasted image 20231105123139.png",
-    "After failed OSCP/Legacy/Pasted image 20231105122713.png",
-    "After failed OSCP/Legacy/Pasted image 20231105122437.png",
-    "After failed OSCP/Legacy/Pasted image 20231105122402.png",
-    "After failed OSCP/Legacy/Pasted image 20231105122329.png",
     "Completed/Legacy/Legacy.md",
     "After failed OSCP/Legacy/Legacy.md",
     "After failed OSCP/Legacy",
     "After failed OSCP",
     "Sauna/Sauna.md",
-    "Sauna/Pasted image 20231027211149.png",
     "Completed/Academy/Academy.md",
     "Sauna",
     "Completed/Academy/Academy.pdf",

