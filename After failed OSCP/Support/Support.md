@@ -12,3 +12,4 @@ smbclient -L 10.129.227.255 -U anonymous
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/d46d0766-c8e7-4943-bae7-58085a618800)
 
+
