@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "After failed OSCP/Legacy/Legacy.md",
+                "file": "Chatterbox/Chatterbox.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "After failed OSCP/Legacy/Legacy.md",
+                "file": "Chatterbox/Chatterbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "After failed OSCP/Legacy/Legacy.md",
+                "file": "Chatterbox/Chatterbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "After failed OSCP/Legacy/Legacy.md"
+                "file": "Chatterbox/Chatterbox.md"
               }
             }
           },
@@ -160,6 +160,10 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Chatterbox/Chatterbox.pdf",
+    "After failed OSCP/Legacy/Legacy.md",
+    "Chatterbox/Chatterbox.md",
+    "Chatterbox",
     "Scrambled/Scrambled.md",
     "Scrambled",
     "After failed OSCP/Forest.pdf",
@@ -175,7 +179,6 @@
     "After failed OSCP/Legacy/Pasted image 20231105142128.png",
     "After failed OSCP/Legacy/Pasted image 20231105123436.png",
     "Completed/Legacy/Legacy.md",
-    "After failed OSCP/Legacy/Legacy.md",
     "After failed OSCP/Legacy",
     "After failed OSCP",
     "Sauna/Sauna.md",
@@ -187,7 +190,6 @@
     "Mantis/Mantis.md",
     "Mantis",
     "Completed/Timelapse/Timelapse.md",
-    "Completed/Academy",
     "Pro Labs - Dante/Pro Labs - Dante.md",
     "Completed/Devel/Devel.md"
   ]
