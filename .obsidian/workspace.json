@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chatterbox/Chatterbox.md",
+                "file": "After failed OSCP/Active/Active.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chatterbox/Chatterbox.md",
+                "file": "After failed OSCP/Active/Active.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chatterbox/Chatterbox.md",
+                "file": "After failed OSCP/Active/Active.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chatterbox/Chatterbox.md"
+                "file": "After failed OSCP/Active/Active.md"
               }
             }
           },
@@ -160,9 +160,12 @@
   },
   "active": "ca987193e7a4c061",
   "lastOpenFiles": [
+    "Chatterbox/Chatterbox.md",
+    "Chatterbox/systeminfo.md",
+    "After failed OSCP/Active/Active.md",
+    "After failed OSCP/Active",
     "Chatterbox/Chatterbox.pdf",
     "After failed OSCP/Legacy/Legacy.md",
-    "Chatterbox/Chatterbox.md",
     "Chatterbox",
     "Scrambled/Scrambled.md",
     "Scrambled",
@@ -186,9 +189,7 @@
     "Sauna",
     "Completed/Academy/Academy.pdf",
     "Completed/Academy/Academy Official HTB Walkthrough.pdf",
-    "Mantis/Mantis.pdf",
     "Mantis/Mantis.md",
-    "Mantis",
     "Completed/Timelapse/Timelapse.md",
     "Pro Labs - Dante/Pro Labs - Dante.md",
     "Completed/Devel/Devel.md"
