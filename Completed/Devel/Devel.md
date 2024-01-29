@@ -84,3 +84,7 @@ bbdd9af9835d374e24f1f5c9c6396c4d
 
 ![[Pasted image 20230731192421.png]]
 ![[Pasted image 20230731193006.png]]
+
+### 29-Jan-24-Mon
+
+*Guided Mode answered*
