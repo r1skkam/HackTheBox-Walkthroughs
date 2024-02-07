@@ -1,0 +1,37 @@
+
+┌──(kali㉿kali)-[~/htb/CozyHosting]
+└─$ ffuf -w /usr/share/seclists/Discovery/Web-Content/spring-boot.txt:FUZZ -u 'http://cozyhosting.htb/FUZZ' -k
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://cozyhosting.htb/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/spring-boot.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+actuator                [Status: 200, Size: 634, Words: 1, Lines: 1, Duration: 515ms]
+actuator/env/home       [Status: 200, Size: 487, Words: 13, Lines: 1, Duration: 517ms]
+actuator/env/lang       [Status: 200, Size: 487, Words: 13, Lines: 1, Duration: 405ms]
+actuator/env/path       [Status: 200, Size: 487, Words: 13, Lines: 1, Duration: 399ms]
+actuator/health         [Status: 200, Size: 15, Words: 1, Lines: 1, Duration: 529ms]
+actuator/sessions       [Status: 200, Size: 48, Words: 1, Lines: 1, Duration: 444ms]
+actuator/env            [Status: 200, Size: 4957, Words: 120, Lines: 1, Duration: 1030ms]
+actuator/mappings       [Status: 200, Size: 9938, Words: 108, Lines: 1, Duration: 1049ms]
+actuator/beans          [Status: 200, Size: 0, Words: 1, Lines: 1, Duration: 585ms]
+:: Progress: [112/112] :: Job [1/1] :: 12 req/sec :: Duration: [0:00:10] :: Errors: 0 ::
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/htb/CozyHosting]
+└─$ 
