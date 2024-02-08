@@ -2,6 +2,8 @@
 
 [CozyHosting](https://app.hackthebox.com/machines/CozyHosting)
 
+*Credits - https://youtu.be/vmsLvQUhBRI* **Walkthrough/Writup**
+
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9d28374e-abe1-408f-b2b9-c83c240aa5ec)
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1f8c588d-5c72-4756-ba35-2d561735d978)
