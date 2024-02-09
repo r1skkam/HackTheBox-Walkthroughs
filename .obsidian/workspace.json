@@ -11,11 +11,9 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "After failed OSCP/Active/Active.md",
-                "mode": "source",
-                "source": false
+                "file": "After failed OSCP/Support.pdf"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "After failed OSCP/Active/Active.md",
+                "file": "After failed OSCP/Support.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "After failed OSCP/Active/Active.md",
+                "file": "After failed OSCP/Support.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "After failed OSCP/Active/Active.md"
+                "file": "After failed OSCP/Support.pdf"
               }
             }
           },
@@ -158,11 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ca987193e7a4c061",
+  "active": "8a4be9126747d020",
   "lastOpenFiles": [
+    "Sauna/Sauna.md",
+    "After failed OSCP/Active/Active.md",
     "Chatterbox/Chatterbox.md",
     "Chatterbox/systeminfo.md",
-    "After failed OSCP/Active/Active.md",
     "After failed OSCP/Active",
     "Chatterbox/Chatterbox.pdf",
     "After failed OSCP/Legacy/Legacy.md",
@@ -184,7 +183,6 @@
     "Completed/Legacy/Legacy.md",
     "After failed OSCP/Legacy",
     "After failed OSCP",
-    "Sauna/Sauna.md",
     "Completed/Academy/Academy.md",
     "Sauna",
     "Completed/Academy/Academy.pdf",
