@@ -14,3 +14,7 @@ http://artcorp.htb/
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c9f94486-be2b-4948-83e4-b3220701feb2)
 
+```
+gobuster dns -d artcorp.htb -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt -q -r 8.8.8.8 -t 4 --delay 1s -o subdomains.txt
+```
+
