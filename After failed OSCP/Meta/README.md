@@ -2,3 +2,15 @@
 
 [Meta](https://app.hackthebox.com/machines/Meta)
 
+```
+echo "10.129.225.157 artcorp.htb" |sudo tee -a /etc/hosts
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/20730a7c-a6c4-4467-a147-0927224866d2)
+
+http://artcorp.htb/
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/3503350a-703b-4115-8ece-1bb6196442c6)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c9f94486-be2b-4948-83e4-b3220701feb2)
+
