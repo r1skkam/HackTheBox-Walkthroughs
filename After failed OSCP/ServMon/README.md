@@ -74,4 +74,6 @@ eba203a9c395aef828f6801967cca9bd
 type nsclient.ini
 ```
 
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9059e2c6-e2cd-4b7e-8176-9009408bb4f8)
+
 
