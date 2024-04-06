@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codify | Limitations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Codify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/editor">Editor</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="container my-4">
+        <h1 class="text-center">Limitations</h1>
+        <hr>
+        <p>The Codify platform allows users to write and run Node.js code online, but there are certain limitations in place to ensure the security of the platform and its users.</p>
+        <h4>Restricted Modules</h4>
+        <p>The following Node.js modules have been restricted from importing:</p>
+        <ul>
+            <li>child_process</li>
+            <li>fs</li>
+	   
+        </ul>
+        <p>This is to prevent users from executing arbitrary system commands, which could be a major security risk.</p>
+        <h4>Module Whitelist</h4>
+	<p>Only a limited set of modules are available to be imported. Some of them are listed below. If you need a specific module that is not available, please contact the administrator by mailing <a href='mailto:support@codify.htb'>support@codify.htb</a> while our ticketing system is being migrated. </p>
+        <ul>
+            <li>url</li>
+            <li>crypto</li>
+            <li>util</li>
+            <li>events</li>
+            <li>assert</li>
+            <li>stream</li>
+            <li>path</li>
+            <li>os</li>
+            <li>zlib</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
