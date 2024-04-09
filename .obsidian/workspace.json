@@ -11,9 +11,11 @@
             "id": "8a4be9126747d020",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "After failed OSCP/Support.pdf"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "After failed OSCP/Support.pdf",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "After failed OSCP/Support.pdf",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "After failed OSCP/Support.pdf"
+                "file": "README.md"
               }
             }
           },
@@ -158,6 +160,8 @@
   },
   "active": "8a4be9126747d020",
   "lastOpenFiles": [
+    "After failed OSCP/Escape/README.md",
+    "After failed OSCP/Support.pdf",
     "Sauna/Sauna.md",
     "After failed OSCP/Active/Active.md",
     "Chatterbox/Chatterbox.md",
@@ -186,7 +190,6 @@
     "Completed/Academy/Academy.md",
     "Sauna",
     "Completed/Academy/Academy.pdf",
-    "Completed/Academy/Academy Official HTB Walkthrough.pdf",
     "Mantis/Mantis.md",
     "Completed/Timelapse/Timelapse.md",
     "Pro Labs - Dante/Pro Labs - Dante.md",
