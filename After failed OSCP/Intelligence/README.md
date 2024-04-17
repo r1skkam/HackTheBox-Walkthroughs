@@ -6,3 +6,5 @@
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ad99ed03-4ed8-4b8a-9332-413eb4fbd3bb)
 
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1f003e13-d59c-41a0-b223-153d0bdae335)
+
