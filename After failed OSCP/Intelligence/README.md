@@ -74,4 +74,9 @@ d=2020-01-01; while [ "$d" != `date -I` ]; do echo "http://10.129.95.154/documen
 exiftool *.pdf
 ```
 
+https://youtu.be/qPEOS0jESQQ?t=443
+https://www.youtube.com/@noxlumens
+
 get-exiftool-creator.py
+
+ 
