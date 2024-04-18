@@ -24,3 +24,34 @@ http://intelligence.htb/documents/
 wget -c https://raw.githubusercontent.com/Septimus4/dateGenerator/master/date_generator.py
 ```
 
+http://intelligence.htb/documents/2020-01-01-upload.pdf
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/6cd78017-4e8d-4c08-ae69-a147ed570204)
+
+http://intelligence.htb/documents/2020-12-15-upload.pdf
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/8eea40ea-d503-485e-9921-ee4374672e8a)
+
+https://youtu.be/Jg_BjkxdtsE?t=351
+
+https://www.youtube.com/@ippsec
+
+```
+date --date="1 day ago" +%Y-%m-%d-upload.pdf
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/414d971a-10b0-44da-992c-b633cd89ec48)
+
+Date within 2020-01-01 and 2020-12-15
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/6e75f8d6-6a82-4eb4-97b4-ed4b8c5ea88f)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/bae32d59-c451-485c-8d0d-7e5435094ded)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ccfcbcf6-e7dc-4cef-8798-0ed20356c797)
+
+```
+ffuf -w date-based.txt:FUZZ -u 'http://intelligence.htb/documents/FUZZ' -mc 200 > uploaded-pdf.txt
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e062e195-b6d4-4789-95ca-f23397be730b)
