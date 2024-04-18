@@ -55,3 +55,23 @@ ffuf -w date-based.txt:FUZZ -u 'http://intelligence.htb/documents/FUZZ' -mc 200 
 ```
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e062e195-b6d4-4789-95ca-f23397be730b)
+
+```
+cat uploaded-pdf.txt | awk '{print $1}' > pdf.txt
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b6bf8ec2-6d63-42c7-beef-5acf526d08fd)
+
+```
+for i in $(cat pdf.txt); do echo http://10.129.95.154/documents/$i; done
+```
+
+```
+d=2020-01-01; while [ "$d" != `date -I` ]; do echo "http://10.129.95.154/documents/$dupload.pdf"; done | xargs -n 1 -P 20 wget < list 2>/dev/null
+```
+
+```
+exiftool *.pdf
+```
+
+get-exiftool-creator.py
