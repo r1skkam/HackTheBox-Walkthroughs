@@ -4,8 +4,8 @@
 ### 09-Apr-24-Tue
 
 - StreamIO
-- Intelligence
-- Busqueda
+- Pwned Intelligence on 2024-04-19
+- Busqueda 
 - Blackfield
 - Soccer
 - Updown
