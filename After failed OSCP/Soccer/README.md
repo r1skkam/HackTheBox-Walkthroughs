@@ -58,3 +58,51 @@ http://soccer.htb/tiny/tinyfilemanager.php?p=tiny%2Fuploads&view=php-reverse-she
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/110f739d-2947-462e-b5fc-bff884d68fda)
 
+http://soccer.htb/tiny/tinyfilemanager.php?p=tiny%2Fuploads&view=aaa.php
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1bdec955-f60c-487d-823a-4f400fa50828)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ea2ebdbf-737d-4505-974c-c4909041f14e)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ffc19f49-68d8-4a86-bc62-9afd0fa00c5c)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9fbdcf57-f2c8-406b-b8f5-5adead166536)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e5c6b863-d516-4703-9fa5-3eb272101cb5)
+
+```
+cat /etc/nginx/sites-available/soc-player.htb
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/1884319a-769b-473e-9056-813d1536a295)
+
+```
+server {
+        listen 80;
+        listen [::]:80;
+
+        server_name soc-player.soccer.htb;
+
+        root /root/app/views;
+
+        location / {
+                proxy_pass http://localhost:3000;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+}
+```
+
+```
+echo '10.129.208.236 soc-player.soccer.htb' |sudo tee -a /etc/hosts
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/e04dc9c1-8b47-4e5b-a923-2ab19548393d)
+
+http://soc-player.soccer.htb/
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/ed5df05c-fc0a-4e36-b5c8-41994eebedd7)
