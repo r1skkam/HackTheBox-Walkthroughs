@@ -64,3 +64,29 @@ http://10.129.227.227/dev/.git/logs/HEAD
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/cac23f51-0100-4b19-a69a-bfab40cb7e46)
 
+```
+echo "10.129.227.227 siteisup.htb" | sudo tee -a /etc/hosts
+```
+
+```
+ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://siteisup.htb -c -ac -H "HOST: FUZZ.siteisup.htb"
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/9270549c-011f-4d4a-a03a-638e5fa59b15)
+
+http://dev.siteisup.htb/
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/a367e461-57a2-436c-9c1c-9abc0dc3ec60)
+
+https://github.com/arthaud/git-dumper
+
+```
+./git_dumper.py http://siteisup.htb/dev/.git dev
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/60988927-356f-401f-b518-c4c417546d08)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/efbb7ec6-5f1c-4866-945f-616f478ce25a)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c3de562b-48f2-4b29-b76c-54462ac7b9cb)
+
