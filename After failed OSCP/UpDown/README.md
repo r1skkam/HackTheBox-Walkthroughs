@@ -90,3 +90,75 @@ https://github.com/arthaud/git-dumper
 
 ![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/c3de562b-48f2-4b29-b76c-54462ac7b9cb)
 
+https://youtu.be/zYn4o85crdY
+https://www.youtube.com/@noxlumens
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/87b0db09-067f-47d7-8a6e-e11fbe25e283)
+
+```
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 22 Apr 2024 10:17:56 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Location: http://127.0.0.1/dev/.git/
+Content-Length: 309
+Content-Type: text/html; charset=iso-8859-1
+
+HTTP/1.1 200 OK
+Date: Mon, 22 Apr 2024 10:17:56 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Vary: Accept-Encoding
+Content-Length: 2881
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /dev/.git</title>
+ </head>
+ <body>
+<h1>Index of /dev/.git</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/dev/">Parent Directory</a></td><td> </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="HEAD">HEAD</a></td><td align="right">2021-10-20 19:40  </td><td align="right"> 21 </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="branches/">branches/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="config">config</a></td><td align="right">2021-10-20 19:42  </td><td align="right">298 </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="description">description</a></td><td align="right">2021-10-20 19:40  </td><td align="right"> 73 </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="hooks/">hooks/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="index">index</a></td><td align="right">2021-10-20 19:42  </td><td align="right">521 </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="info/">info/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="logs/">logs/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="objects/">objects/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="packed-refs">packed-refs</a></td><td align="right">2021-10-20 19:40  </td><td align="right">112 </td><td> </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="refs/">refs/</a></td><td align="right">2021-10-20 19:40  </td><td align="right">  - </td><td> </td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.41 (Ubuntu) Server at 127.0.0.1 Port 80</address>
+</body></html>
+```
+
+**.htaccess**
+
+```
+SetEnvIfNoCase Special-Dev "only4dev" Required-Header
+Order Deny,Allow
+Deny from All
+Allow from env=Required-Header
+```
+
+http://dev.siteisup.htb/
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/35b08f82-7a8a-4aee-b3c7-8dbc461b2331)
+
+http://dev.siteisup.htb/?page=admin
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/50f17969-7e40-4f8e-adcd-f98e28b9e7a0)
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/d111c37a-8239-4848-84b1-ca1a5bd6637d)
+
+```
+echo "<?php phpinfo(); ?>" > info.php
+```
+
+![image](https://github.com/r1skkam/HackTheBox-Walkthroughs/assets/58542375/20e38da3-3fd2-44b5-985a-5b2099a0b106)
